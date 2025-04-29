@@ -1,0 +1,12 @@
+project_name: kone-sample-project
+technology_stack: java
+build_type: maven
+deployment_method: cloudformation
+branching_strategy: dev-staging-main
+tagging_strategy: semantic-versioning
+quality_gates:
+  lint: true
+  static_analysis: true
+  unit_tests: true
+  security_scan: true
+  coverage_threshold: 80

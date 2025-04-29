@@ -1,0 +1,15 @@
+stages:
+  - lint
+  - static_analysis
+  - unit_test
+  - build
+  - security_scan
+  - deploy
+
+include:
+  - local: 'templates/common/lint.yml'
+  - local: 'templates/common/static-analysis.yml'
+  - local: 'templates/common/unit-test.yml'
+  - local: 'templates/common/security-scan.yml'
+  - local: 'templates/build/build-java.yml'
+  - local: 'templates/deploy/deploy-cloudformation.yml'
