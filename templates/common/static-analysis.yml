@@ -1,0 +1,5 @@
+static_analysis:
+  stage: static_analysis
+  script:
+    - echo "Running static analysis..."
+    - mvn sonar:sonar

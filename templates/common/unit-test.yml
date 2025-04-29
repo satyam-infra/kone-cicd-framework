@@ -1,0 +1,5 @@
+unit_test:
+  stage: unit_test
+  script:
+    - echo "Running Unit Tests..."
+    - mvn test

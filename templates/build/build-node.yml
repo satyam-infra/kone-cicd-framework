@@ -1,0 +1,6 @@
+build:
+  stage: build
+  script:
+    - echo "Building Node.js project with npm..."
+    - npm install
+    - npm run build

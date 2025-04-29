@@ -1,0 +1,5 @@
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying using AWS CDK..."
+    - cdk deploy --require-approval never

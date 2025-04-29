@@ -1,0 +1,5 @@
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying using AWS CloudFormation..."
+    - aws cloudformation deploy --template-file template.yaml --stack-name $CI_PROJECT_NAME

@@ -1,0 +1,5 @@
+security_scan:
+  stage: security_scan
+  script:
+    - echo "Running Security Scan..."
+    - mvn dependency-check:check

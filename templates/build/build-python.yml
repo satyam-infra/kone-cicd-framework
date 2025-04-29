@@ -1,0 +1,5 @@
+build:
+  stage: build
+  script:
+    - echo "Building Python project..."
+    - pip install -r requirements.txt

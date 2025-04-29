@@ -1,0 +1,5 @@
+build:
+  stage: build
+  script:
+    - echo "Building Java project with Maven..."
+    - mvn clean install

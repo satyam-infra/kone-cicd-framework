@@ -1,0 +1,5 @@
+lint:
+  stage: lint
+  script:
+    - echo "Running lint checks..."
+    - mvn checkstyle:check

@@ -1,0 +1,6 @@
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying using Docker..."
+    - docker build -t myapp .
+    - docker run -d -p 80:80 myapp
